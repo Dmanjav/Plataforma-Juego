@@ -76,6 +76,7 @@ img {
 
 h1 {
     font-size: 3rem;
+    margin: 2%;
 }
 
 h2 {
@@ -128,7 +129,7 @@ h3 {
     font: inherit;
     width: 100%;
     border: 0;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     border-bottom: 2px solid black;
     outline: 0;
     font-size: 1.3rem;
@@ -225,3 +226,52 @@ p {
   #support {
     margin-top: 50px;
   }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+select {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  padding: 0.2rem;
+  border-radius: 5px;
+  
+  margin-right: 1rem; 
+}
+
+label[for="pais"] {
+  text-align: left;
+  display: block;
+  font-size: 1.35rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#country {
+  width: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  margin-right: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  width: 14px; 
+  
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5d5c5c;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #c2c2c2;
+}

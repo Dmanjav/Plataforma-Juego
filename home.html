@@ -12,20 +12,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body style="overflow-y: hidden;background-size: cover; background-image: url(https://assets-global.website-files.com/5e3890f50880451296c1896c/6362bdfdda8579e5bf7faf43_image-from-rawpixel-id-5924954-jpeg.jpg);">
+<body
+    style="overflow-y: hidden;background-size: cover; background-image: url(https://assets-global.website-files.com/5e3890f50880451296c1896c/6362bdfdda8579e5bf7faf43_image-from-rawpixel-id-5924954-jpeg.jpg);">
     <div class="papa">
         <div class="sesion">
             <div class="nuevaC">
                 <div class="inputs">
                     <h1>Crear Cuenta</h1>
                     <form>
-                        <input type="input" class="input_correo" placeholder="Usuario..." name="usuario" id="iUsuario">
                         <input type="input" class="input_correo" placeholder="Nombre..." name="nombre" id="iNombre">
-                        <input type="input" class="input_correo" placeholder="Correo..." name="correo" id="iCorreo">
-                        <input type="password" class="input_correo" placeholder="Contraseña..." name="contraseña" id="iContra">
-                        <input type="input" class="input_correo" placeholder="Edad..." name="edad" id="iEdad">
+                        <input type="email" class="input_correo" placeholder="Correo..." name="correo" id="iCorreo">
+                        <input type="password" class="input_correo" placeholder="Contraseña..." name="contraseña"
+                            id="iContra">
+                        <input type="date" class="input_correo" placeholder="Fecha de nacimiento..." name="edad"
+                            id="iEdad">
+
+                        <div class="row">
+                            <label style="font-size: 1.35rem;" for="pais">País...</label>
+                            <select id="country" name="country">
+                                <option value="" selected>Selecciona una opción</option>
+                                <option value="antiguaybarbuda">(1-268) Antigua y Barbuda</option>
+                                <option value="argentina">(54) Argentina</option>
+                                <option value="bahamas">(1-242) Bahamas</option>
+                                <option value="barbados">(1-246) Barbados</option>
+                                <option value="belice">(501) Belice</option>
+                                <option value="bolivia">(591) Bolivia</option>
+                                <option value="brasil">(55) Brasil</option>
+                                <option value="canada">(1) Canadá</option>
+                                <option value="chile">(56) Chile</option>
+                                <option value="colombia">(57) Colombia</option>
+                                <option value="costarica">(506) Costa Rica</option>
+                                <option value="cuba">(53) Cuba</option>
+                                <option value="dominica">(1-767) Dominica</option>
+                                <option value="ecuador">(593) Ecuador</option>
+                                <option value="elsalvador">(503) El Salvador</option>
+                                <option value="granada">(1-473) Granada</option>
+                                <option value="guatemala">(502) Guatemala</option>
+                                <option value="guyana">(592) Guyana</option>
+                                <option value="guyanafrancesa">(594) Guayana Francesa</option>
+                                <option value="haiti">(509) Haití</option>
+                                <option value="jamaica">(1-876) Jamaica</option>
+                                <option value="mexico">(52) México</option>
+                                <option value="nicaragua">(505) Nicaragua</option>
+                                <option value="panama">(507) Panamá</option>
+                                <option value="paraguay">(595) Paraguay</option>
+                                <option value="peru">(51) Perú</option>
+                                <option value="republicadominicana">(1-809, 1-829, 1-849) República Dominicana</option>
+                                <option value="sancristobalynieves">(1-869) San Cristóbal y Nieves</option>
+                                <option value="sanvicente">(1-784) San Vicente y las Granadinas</option>
+                                <option value="santalucia">(1-758) Santa Lucía</option>
+                                <option value="surinam">(597) Surinam</option>
+                                <option value="trinidadytobago">(1-868) Trinidad y Tobago</option>
+                                <option value="uruguay">(598) Uruguay</option>
+                                <option value="usa">(1) Estados Unidos</option>
+                                <option value="venezuela">(58) Venezuela</option>
+                            </select>
+                        </div>
                         <div style="display: flex; justify-content: center; align-items: center; margin-top: 8%;">
-                            <input type="submit" class="botones" value="Crear Cuenta">
+                            <a class="botones" href="index.html">Crear Cuenta</a>
                         </div>
                     </form>
                 </div>
@@ -35,20 +79,22 @@
                     <h1>Iniciar Sesión</h1>
                     <form>
                         <input type="input" class="input_correo" placeholder="Correo..." name="correo" id="iCorreo">
-                        <input type="password" class="input_correo" placeholder="Contraseña..." name="contraseña" id="iContra">
+                        <input type="password" class="input_correo" placeholder="Contraseña..." name="contraseña"
+                            id="iContra">
                         <h2 style="display: flex; justify-content: center; align-items: center;">o</h2>
                         <hr style="border-radius: 5px;">
-                        <div class="iniciar-buttons" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="iniciar-buttons"
+                            style="display: flex; justify-content: center; align-items: center;">
                             <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-fw"></i></a>
                             <a href="https://appleid.apple.com/"><i class="fa fa-apple" aria-hidden="true"></i></a>
                             <a href="https://accounts.google.com/"><i class="fa fa-google fa-fw"></i></a>
                             <a href="https://twitter.com/"><i class="fa fa-twitter fa-fw"></i>
 
-                    </div>
-                    <hr style="border-radius: 5px;">
-                    <div style="display: flex; justify-content: center; align-items: center; margin-top: 11%;">
-                        <a class="botones" href="index.html">Iniciar Sesión</a>
-                    </div>
+                        </div>
+                        <hr style="border-radius: 5px;">
+                        <div style="display: flex; justify-content: center; align-items: center; margin-top: 11%;">
+                            <a class="botones" href="index.html">Iniciar Sesión</a>
+                        </div>
                 </div>
             </div>
 
