@@ -23,8 +23,8 @@ db.connect(err => {
     }
 });
 
-app.get("/home/:nombre", (req, res) => {
-    db.query("Select nombre, contraseña, adminCuenta From Cuenta Where adminCuenta = 'true'", (err, rows) => {
+app.get("/home/", (req, res) => {
+    db.query("SELECT nombre, contraseña FROM Cuenta WHERE adminCuenta = 'true'", (err, rows) => {
         if (err) {
             res.status(500).json(err);
         } else {
