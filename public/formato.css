@@ -164,6 +164,7 @@ h3 {
     text-align: center;
     padding: 10px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .iniciar-buttons a {
